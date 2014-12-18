@@ -8,8 +8,8 @@ File: woocommerce/includes/class-wc-shipping.php
 Look for line "if ( empty( $chosen_method ) || ! isset( $_available_methods[ $chosen_method ] ) ) {"
 
 New code
+==============================
 if ( empty( $chosen_method ) || ! isset( $_available_methods[ $chosen_method ] ) ) {
-						// Default to cheapest
 						foreach ( $_available_methods as $method_id => $method ) {
 
 							  $string =  $method->label;
